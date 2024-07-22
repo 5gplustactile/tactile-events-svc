@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: listener
+  repository: dockerhub.mobilesandbox.cloud:9443/tactile5g/listener
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
