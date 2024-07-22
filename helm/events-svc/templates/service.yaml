@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: events-svc
+  labels:
+    {{- include "events-svc.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "events-svc.selectorLabels" . | nindent 4 }}
