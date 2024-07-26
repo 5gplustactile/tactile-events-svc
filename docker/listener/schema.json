@@ -1,0 +1,16 @@
+{
+    "type" : "object",
+    "properties" : {
+        "action" : {"type" : "string"},
+        "entity_type" : {"type" : "string"},
+        "time" : {"type" : "string"},
+        "id" : {"type" : "string"},
+        "payload" : {
+            "type" : "object",
+            "properties": {
+                "id" : {"type" : "string"},
+                "name" : {"type" : "string"}
+            }
+        }
+    }
+}
