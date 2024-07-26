@@ -6,7 +6,7 @@ events-svc
 
 $ kubectl --kubeconfig edge-clusters-core5g.kubeconfig create secret docker-registry harbor-secret \
   --docker-server=https://dockerhub.mobilesandbox.cloud:9443 \
-  --docker-username=USERE \
-  --docker-password="PASSWORD" \
+  --docker-username=aaaa \
+  --docker-password="vOlkYoifs3" \
   --namespace listener-events
 ````
