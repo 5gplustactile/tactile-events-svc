@@ -18,7 +18,7 @@ env:
   - name: MONGO_HOST
     value: mongo
   - name: MONGO_PORT
-    value: 27017
+    value: "27017"
   - name: MONGO_USER
     value: root
   - name: MONGO_PASSWORD
