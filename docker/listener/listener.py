@@ -308,17 +308,17 @@ def qos_prediction_post():
 
 # CLEAR CORE EVENT COLLECTION
 @app.post('/events-devo-core-analytics/clear')
-def nwdaf_discovery_clear_post():
+def nwdaf_discovery_clear_core_ana_post():
     """Clear all webhook events."""
     DB_NAME=os.getenv('MONGO_EVN_DB')
-    COL_NAME=os.getenv('MONGO_EVN_COL_CORE_PRED') 
+    COL_NAME=os.getenv('MONGO_EVN_COL_CORE_ANA') 
 
     get_collection(DB_NAME,COL_NAME).drop()
 
     return jsonify({'success': True})
 
 @app.post('/events-devo-core-predictions/clear')
-def nwdaf_discovery_clear_post():
+def nwdaf_discovery_clear_core_pred_post():
     """Clear all webhook events."""
     DB_NAME=os.getenv('MONGO_EVN_DB')
     COL_NAME=os.getenv('MONGO_EVN_COL_CORE_PRED') 
@@ -329,7 +329,7 @@ def nwdaf_discovery_clear_post():
 
 # CLEAR QOS EVENT COLLECTION
 @app.post('/events-devo-qos-analytics/clear')
-def nwdaf_nokia_clear_post():
+def nwdaf_nokia_clear_qos_ana_post():
     """Clear all webhook events."""
     DB_NAME=os.getenv('MONGO_EVN_DB')
     COL_NAME=os.getenv('MONGO_EVN_COL_QOS_ANA') 
@@ -339,7 +339,7 @@ def nwdaf_nokia_clear_post():
     return jsonify({'success': True})
 
 @app.post('/events-devo-qos-predictions/clear')
-def nwdaf_discovery_clear_post():
+def nwdaf_discovery_clear_qos_pred_post():
     """Clear all webhook events."""
     DB_NAME=os.getenv('MONGO_EVN_DB')
     COL_NAME=os.getenv('MONGO_EVN_COL_QOS_PRED') 
