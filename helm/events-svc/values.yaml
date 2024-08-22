@@ -26,7 +26,7 @@ env:
   - name: MONGO_EVN_DB
     value: tactileDB
   - name: MONGO_EVN_COL_CORE_ANA
-    value: roeventsCoreAnalyticsot
+    value: eventsCoreAnalytics
   - name: MONGO_EVN_COL_CORE_PRED
     value: eventsCorePredictions
   - name: MONGO_EVN_COL_QOS_ANA
