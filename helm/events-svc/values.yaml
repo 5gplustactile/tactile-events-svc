@@ -16,11 +16,11 @@ fullnameOverride: ""
 
 env:
   - name: MONGO_HOST
-    value: mongo
+    value: nnwdaf-netapi-mongo.nwdaf-netapi
   - name: MONGO_PORT
     value: "27017"
   - name: MONGO_USER
-    value: root
+    value: naas_nwdaf_admin
   - name: MONGO_PASSWORD
     value: example
   - name: MONGO_EVN_DB
