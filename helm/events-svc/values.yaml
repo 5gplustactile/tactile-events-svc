@@ -16,7 +16,7 @@ fullnameOverride: ""
 
 env:
   - name: MONGO_HOST
-    value: nnwdaf-netapi-mongo.nwdaf-netapi
+    value: nnwdaf-netapi-mongo.nwdaf-netapi.svc.cluster.local
   - name: MONGO_PORT
     value: "27017"
   - name: MONGO_USER
